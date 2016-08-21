@@ -22,6 +22,10 @@ class ViewController: UIViewController {
         let span = MKCoordinateSpanMake(0.01, 0.01)
         let region = MKCoordinateRegionMake(coordinate, span)
         mapView.setRegion(region, animated:true)
+        
+        let annotation = MKPointAnnotation()
+        annotation.coordinate = CLLocationCoordinate2DMake(35.700668, 139.771670)
+        self.mapView.addAnnotation(annotation)
     }
 
     override func didReceiveMemoryWarning() {
