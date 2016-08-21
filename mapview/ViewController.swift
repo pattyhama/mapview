@@ -25,7 +25,10 @@ class ViewController: UIViewController {
         
         let annotation = MKPointAnnotation()
         annotation.coordinate = CLLocationCoordinate2DMake(35.700668, 139.771670)
+        annotation.title = "アニメショップ"
+        annotation.subtitle = "秋葉原"
         self.mapView.addAnnotation(annotation)
+       
     }
 
     override func didReceiveMemoryWarning() {
